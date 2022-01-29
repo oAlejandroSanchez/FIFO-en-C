@@ -1,18 +1,9 @@
-/*Nombre: S醤chez P閞ez Omar Alejandro
-
-Problema:
-Elaborar una base de datos con la estructura de datos de COLAS.
-Nota: Debe funcionar solamente en la memoria principal de la 
-computadora. 
-
-*/
-
-//Definci髇 de las librer韆s
+//Definci贸n de las librer铆as
 #include "stdio.h"
 #include "stdlib.h"
 #include <ctype.h>
 
-//Definici髇 de las variables
+//Definici贸n de las variables
 typedef struct _Nodo{
 	
 	char *nombre;
@@ -27,7 +18,7 @@ FIFO *final = NULL;
 
 int contador = 0;
 
-//Definici髇 de las funciones
+//Definici贸n de las funciones
 void Inciso_a(void);
 void Ingresar_datos(FIFO *);
 void Inciso_b(void);
@@ -35,7 +26,7 @@ void Inciso_c(void);
 int Inciso_d(void);
 void Otro_caso(void);
 
-//Funci髇 principal del programa
+//Funci贸n principal del programa
 int main(void){
 	
 	char opcion, respuesta;
@@ -103,7 +94,7 @@ int main(void){
 
 }
 
-//La funci髇 del inciso (a), permite ingresar los datos a la FIFO
+//La funci贸n del inciso (a), permite ingresar los datos a la FIFO
 void Inciso_a(void){
 	
 	system("cls");
@@ -159,7 +150,7 @@ void Inciso_a(void){
 	
 }
 
-//Esta funci髇 se encarga de ingresar los elementos en la FIFO
+//Esta funci贸n se encarga de ingresar los elementos en la FIFO
 void Ingresar_datos(FIFO *nodo_auxiliar){
 	
 	nodo_auxiliar->siguiente = NULL;
@@ -178,7 +169,7 @@ void Ingresar_datos(FIFO *nodo_auxiliar){
 	
 }
 
-//La funci髇 del inciso (b), muestra en pantalla los datos ingresados hasta el momento
+//La funci贸n del inciso (b), muestra en pantalla los datos ingresados hasta el momento
 //en la FIFO
 void Inciso_b(void){
 	
@@ -215,7 +206,7 @@ void Inciso_b(void){
 	
 }
 
-//La funci髇 del inciso (c), muestra los datos de la COLA en la pantalla
+//La funci贸n del inciso (c), muestra los datos de la COLA en la pantalla
 void Inciso_c(void){
 	
 	system("cls");
@@ -251,14 +242,14 @@ void Inciso_c(void){
 	
 }
 
-//Esta funci髇 es llamada para salir del programa
+//Esta funci贸n es llamada para salir del programa
 int Inciso_d(void){
 	
 	exit(-1);
 	
 }
 
-//Esta funci髇 le dice al usuario si se ha equivocado y que si quiere volverlo a intentar
+//Esta funci贸n le dice al usuario si se ha equivocado y que si quiere volverlo a intentar
 void Otro_caso(void){
 	
 	system("cls");
